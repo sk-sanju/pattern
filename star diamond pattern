@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+    int i,j,n,l;
+    printf("enter limit:");
+    scanf("%d",&n);
+    for(i=-n;i<=n;i++){
+        if(i<0){
+        l=-i;
+    }else{
+    l=i;
+    }
+    for(j=n;j>0;j--){
+        if(j<n-l){
+            printf("* ");
+        }else{
+            printf(" ");
+        }
+    }
+    printf("\n");
+    }
+    return 0;
+}
